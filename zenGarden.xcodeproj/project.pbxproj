@@ -11,6 +11,8 @@
 		40FA3165C5284AD7BAB6CD65 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD04907EBEA54295AECEC8A9 /* Images.xcassets */; };
 		51850E5214B3489FA4A199E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2967C44308A445FB9FBB188 /* Foundation.framework */; };
 		8F6EA8AB3C2269B0A60B5D16 /* libPods-unit_tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA9F1FC2B2A414731A305C8 /* libPods-unit_tests.a */; };
+		BDD183F91B4B188100B7DB9F /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD183F81B4B188100B7DB9F /* Storyboard.storyboard */; };
+		BDD183FC1B4B18D000B7DB9F /* FISZenGardenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD183FB1B4B18D000B7DB9F /* FISZenGardenViewController.m */; };
 		D870D8071A02A13800D571DA /* rock1.png in Resources */ = {isa = PBXBuildFile; fileRef = D870D8061A02A13800D571DA /* rock1.png */; };
 		D870D80B1A02A35A00D571DA /* shrub.png in Resources */ = {isa = PBXBuildFile; fileRef = D870D8081A02A35900D571DA /* shrub.png */; };
 		D870D80C1A02A35A00D571DA /* swordinrock.png in Resources */ = {isa = PBXBuildFile; fileRef = D870D8091A02A35A00D571DA /* swordinrock.png */; };
@@ -36,6 +38,9 @@
 		A4278CED900D661A7912A60C /* Pods-unit_tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B2967C44308A445FB9FBB188 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		B43519F1BA6D4B7090679A66 /* zenGarden-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "zenGarden-Prefix.pch"; sourceTree = "<group>"; };
+		BDD183F81B4B188100B7DB9F /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		BDD183FA1B4B18D000B7DB9F /* FISZenGardenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISZenGardenViewController.h; sourceTree = "<group>"; };
+		BDD183FB1B4B18D000B7DB9F /* FISZenGardenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISZenGardenViewController.m; sourceTree = "<group>"; };
 		CC1E2B91E2814818A6BFEB9A /* FISAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FISAppDelegate.m; sourceTree = "<group>"; };
 		D870D8061A02A13800D571DA /* rock1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock1.png; sourceTree = "<group>"; };
 		D870D8081A02A35900D571DA /* shrub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shrub.png; sourceTree = "<group>"; };
@@ -81,6 +86,9 @@
 		54380862D30D4434A9976D88 /* zenGarden */ = {
 			isa = PBXGroup;
 			children = (
+				BDD183FA1B4B18D000B7DB9F /* FISZenGardenViewController.h */,
+				BDD183FB1B4B18D000B7DB9F /* FISZenGardenViewController.m */,
+				BDD183F81B4B188100B7DB9F /* Storyboard.storyboard */,
 				E75845D4FA47490BA86DCFC5 /* FISAppDelegate.h */,
 				CC1E2B91E2814818A6BFEB9A /* FISAppDelegate.m */,
 				FE18899F6B1F408590194E69 /* Resources */,
@@ -262,6 +270,7 @@
 				D870D80B1A02A35A00D571DA /* shrub.png in Resources */,
 				40FA3165C5284AD7BAB6CD65 /* Images.xcassets in Resources */,
 				D870D80C1A02A35A00D571DA /* swordinrock.png in Resources */,
+				BDD183F91B4B188100B7DB9F /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +337,7 @@
 			files = (
 				F3C1E78B367F490F85E73E3D /* FISAppDelegate.m in Sources */,
 				38F99569C9BA4C4786763AA2 /* main.m in Sources */,
+				BDD183FC1B4B18D000B7DB9F /* FISZenGardenViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

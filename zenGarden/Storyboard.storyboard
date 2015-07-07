@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LIe-0k-SXE">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Zen Garden View Controller-->
+        <scene sceneID="ZMR-Xn-ivt">
+            <objects>
+                <viewController id="LIe-0k-SXE" customClass="FISZenGardenViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Wn-eJ-zyn"/>
+                        <viewControllerLayoutGuide type="bottom" id="PLg-Rw-z8j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PSE-B2-MId">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rake.png" translatesAutoresizingMaskIntoConstraints="NO" id="3Er-A0-WCe">
+                                <rect key="frame" x="0.0" y="20" width="150" height="150"/>
+                                <accessibility key="accessibilityConfiguration" label="rake">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="2EF-4U-dIl"/>
+                                    <constraint firstAttribute="width" constant="150" id="q2F-I1-D6C"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rock1.png" translatesAutoresizingMaskIntoConstraints="NO" id="0za-5N-aSV">
+                                <rect key="frame" x="450" y="20" width="150" height="150"/>
+                                <accessibility key="accessibilityConfiguration" label="stone">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="577-xP-EJe"/>
+                                    <constraint firstAttribute="width" constant="150" id="Kym-f0-v4f"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swordinrock.png" translatesAutoresizingMaskIntoConstraints="NO" id="gPT-T5-UlL">
+                                <rect key="frame" x="0.0" y="450" width="150" height="150"/>
+                                <accessibility key="accessibilityConfiguration" label="excalibur">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="AqA-Pq-ZVK"/>
+                                    <constraint firstAttribute="height" constant="150" id="zTo-Lb-cs5"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shrub.png" translatesAutoresizingMaskIntoConstraints="NO" id="w6l-qz-LLE">
+                                <rect key="frame" x="450" y="450" width="150" height="150"/>
+                                <accessibility key="accessibilityConfiguration" label="shrub">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="2QI-O7-T3S"/>
+                                    <constraint firstAttribute="width" constant="150" id="yCh-3T-bvz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0za-5N-aSV" firstAttribute="top" secondItem="9Wn-eJ-zyn" secondAttribute="top" id="819-mQ-Dev"/>
+                            <constraint firstItem="gPT-T5-UlL" firstAttribute="leading" secondItem="PSE-B2-MId" secondAttribute="leading" id="JSd-Eh-fKH"/>
+                            <constraint firstItem="3Er-A0-WCe" firstAttribute="leading" secondItem="PSE-B2-MId" secondAttribute="leading" id="WWV-jX-f2n"/>
+                            <constraint firstItem="gPT-T5-UlL" firstAttribute="bottom" secondItem="PLg-Rw-z8j" secondAttribute="top" id="eCI-Su-mKY"/>
+                            <constraint firstItem="w6l-qz-LLE" firstAttribute="bottom" secondItem="PLg-Rw-z8j" secondAttribute="top" id="k3C-bv-yJD"/>
+                            <constraint firstItem="0za-5N-aSV" firstAttribute="trailing" secondItem="PSE-B2-MId" secondAttribute="trailing" id="kYe-GT-GuB"/>
+                            <constraint firstItem="3Er-A0-WCe" firstAttribute="top" secondItem="9Wn-eJ-zyn" secondAttribute="bottom" id="nYy-Rl-opK"/>
+                            <constraint firstItem="w6l-qz-LLE" firstAttribute="trailing" secondItem="PSE-B2-MId" secondAttribute="trailing" id="p9R-pM-5ew"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="excaliburBottomConstraint" destination="eCI-Su-mKY" id="H3b-9h-UX8"/>
+                        <outlet property="excaliburImageView" destination="gPT-T5-UlL" id="xXH-bh-5cU"/>
+                        <outlet property="excaliburLeftConstraint" destination="JSd-Eh-fKH" id="bbi-eh-bQF"/>
+                        <outlet property="rakeImageView" destination="3Er-A0-WCe" id="B72-jh-plZ"/>
+                        <outlet property="rakeLeftConstraint" destination="WWV-jX-f2n" id="Nza-Wg-kRm"/>
+                        <outlet property="rakeTopConstraint" destination="nYy-Rl-opK" id="gzQ-68-IEX"/>
+                        <outlet property="shrubBottomConstraint" destination="k3C-bv-yJD" id="NhE-Gg-NUV"/>
+                        <outlet property="shrubImageView" destination="w6l-qz-LLE" id="2Sa-oF-QaL"/>
+                        <outlet property="shrubRightConstraint" destination="p9R-pM-5ew" id="k7c-ad-Pzi"/>
+                        <outlet property="stoneImageView" destination="0za-5N-aSV" id="uAZ-xt-aea"/>
+                        <outlet property="stoneRightConstraint" destination="kYe-GT-GuB" id="ai0-Pn-fVd"/>
+                        <outlet property="stoneTopConstraint" destination="819-mQ-Dev" id="pbf-rA-V1D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BkN-mR-hg7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="289" y="24"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rake.png" width="402" height="597"/>
+        <image name="rock1.png" width="297" height="234"/>
+        <image name="shrub.png" width="600" height="396"/>
+        <image name="swordinrock.png" width="498" height="600"/>
+    </resources>
+</document>
